@@ -14,10 +14,11 @@
 // }
 
 
+let myIndexle = dar.value
 let myKey = "fbfcdcdd51890c4dd9f73dbd8fe927d9"
-const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${myIndex.value}&appid=${myKey}`
+const endpoint = `https://api.openweathermap.org/data/2.5/weather?q=${myIndexle}&appid=${myKey}`
 const endpoint2 = "https://api.github.com/users"
-const test = async()=>{
+const tesIt = async()=>{
     let response = await fetch(endpoint)
     let jsonResponse = await response.json()
     // console.log(jsonResponse)
