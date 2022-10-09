@@ -1,0 +1,67 @@
+.container {
+    background-image: url(images/timothy-chan-FNWc_Dqsw2g-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-attachment: fixed;
+}
+body{
+    background-color: aquamarine !important;
+}
+
+.nav {
+    background-color: rgb(195, 196, 200);
+    position: sticky;
+    top: 30px;
+    z-index: 2;
+}
+
+.card {
+    width: 10rem;
+  height: 100px;
+    border-radius:  10%  5% !important;
+    background-color: rgba(55, 54, 53, 0.301) !important;
+    /* background-color: rgba( 0.153) !important; */
+    position: relative;
+    right: 40px
+    ;
+}
+
+p {width: 100%;
+color:white ;
+    text-align: center;
+    height: 30%;
+    /* text-decoration: way line-through aqua dotted; */
+    border-bottom: rgb(68, 58, 7) 1px solid !important;
+    }
+
+.second{
+    color: antiquewhite;
+    background-color: rgba(160, 162, 162, 0.045) !important;
+height: 70%;
+width: 100%;
+text-align: center;
+border-top: solid 1px black;
+border-bottom: 1px solid transparent;
+    /* transform: translateY(-20px); */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+.input{
+    display: flex;
+    margin-top: 50px;
+
+}
+input{
+    background-color: rgba(179, 129, 53, 0.369);
+    color:rgb(23,49,37)
+}
+button{
+    background-color: rgba(179, 129, 53, 0.369);
+    color: white;
+    border:solid 1px seagreen;
+}
