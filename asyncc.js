@@ -23,95 +23,92 @@ async function tesIt() {
     uClouds.innerHTML = `${jsonResponse.clouds.all}%`;
     const iconsShow = () => {
         if (jsonResponse.weather[0].icon == '11d') {
-            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/11d@2x.png" alt=""
-`
+            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/11d@2x.png" alt="">`
+            document.getElementById("containers").style.backgroundImage = "url('./images/thunder.jpg')";
         }
         else if (jsonResponse.weather[0].icon == '04d') {
-            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/04d@2x.png" alt=""
-`
+            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/04d@2x.png" alt="">`
+            document.getElementById("containers").style.backgroundImage = "url('./images/clear.jpg')";
         }
 
         else if (jsonResponse.weather[0].icon == '10d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/rainy.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/10d@2x.png" alt="">`
         }
 
         else if (jsonResponse.weather[0].icon == '09d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/rainy.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/09d@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '13d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/snowy.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/13d@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '50d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/foggy.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/50d@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '01d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/clear.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/01d@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '02d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/warm.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/02d@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '03d') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/warm.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/03d@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '11n') {
-            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/11n@2x.png" alt=""
-`
+            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/11n@2x.png" alt="">`
+            document.getElementById("containers").style.backgroundImage = "url('./images/thunder.jpg')"
         }
         else if (jsonResponse.weather[0].icon == '04n') {
-            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/04n@2x.png" alt=""
-`
+            imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/04n@2x.png" alt="">`
+            document.getElementById("containers").style.backgroundImage = "url('./images/cloudy.jpg')";
         }
-
         else if (jsonResponse.weather[0].icon == '10n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/rainyn.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/10n@2x.png" alt="">`
         }
-
         else if (jsonResponse.weather[0].icon == '09n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/rainyn.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/09n@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '13n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/snowy.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/13n@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '50n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/foggy.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/50n@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '01n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/road.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/01n@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '02n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/road.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/02n@2x.png" alt="">`
         }
         else if (jsonResponse.weather[0].icon == '03n') {
-
+            document.getElementById("containers").style.backgroundImage = "url('./images/road.jpg')";
             imageSe.innerHTML = `<img src="http://openweathermap.org/img/wn/03n@2x.png" alt="">`
         }
     }
     iconsShow()
 
     
-    const backGround = () => {
-        if (jsonResponse.weather[0].icon == '50n' || jsonResponse.weather[0].icon == '50d') {
+    // const backGround = () => {
+    //     if (jsonResponse.weather[0].icon == '50n' || jsonResponse.weather[0].icon == '50d') {
 
-            containers.innerHTML = `<img src="./images/rainy.jpg" alt="">`
-        }
-        else {
+    //     }
+    //     else {
             
-            document.getElementById("containers").style.backgroundImage = "url('./images/sunny.jpg')";
-        }
-    }
+    //         document.getElementById("containers").style.backgroundImage = "url('./images/sunny.jpg')";
+    //     }
+    // }
     //  fetch('https://jsonplaceholder.typicode.com/todos/1')
     //   .then(response => response.json())
     //   .then(json => console.log(json))
