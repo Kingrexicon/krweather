@@ -112,5 +112,17 @@ async function tesIt() {
     //  fetch('https://jsonplaceholder.typicode.com/todos/1')
     //   .then(response => response.json())
     //   .then(json => console.log(json))
-    backGround()
+
 }
+const thyme=()=>{
+let date = new Date();
+let sec = date.getSeconds()
+let min = (date.getMinutes())
+let hours = (date.getHours())
+let day = (date.getDate())
+let month = date.getMonth()
+let year = date.getFullYear()
+
+time.innerHTML= `<div class="one mx-2">${hours}:${min}:${sec}</div> <div class="two mt-5 fs-4 text-warning">${day}/${month+1}/${year}</div>`
+}
+setInterval(thyme,1000)

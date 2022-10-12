@@ -23,7 +23,28 @@ body{
     top: 0;
     z-index: 55;
 }
+.time{
+    display: flex;
+    height: 70px;
+    border-top: 1px solid rgba(255, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 128, 0, 0.372);
+    border-left: 1px solid rgba(0, 0, 255, 0.338);
+    border-right: 1px solid rgba(255, 255, 0, 0.246);
+    align-items: center;
+    padding: 10px;
+background-color: rgba(194, 220, 224, 0.423);
+box-shadow:0 0 40px 5px rgb(73, 43, 43) ;
+}
+.time .one{
 
+    font-size: 30px;
+color: transparent;
+font-weight: 500;
+-webkit-text-stroke: brown 1px ;
+}
+.time .two{
+    font-weight: 400;
+}
 .card {
     width: 10rem;
   min-height: 100px;
